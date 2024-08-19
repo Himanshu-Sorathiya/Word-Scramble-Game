@@ -1,3 +1,58 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .wrapper {
+    @apply flex h-screen w-screen items-center justify-center bg-indigo-500;
+    caret-color: transparent;
+  }
+
+  .game-area {
+    @apply flex w-96 flex-col rounded-lg bg-white;
+  }
+
+  .heading-container {
+    @apply border-b;
+  }
+
+  .heading {
+    @apply p-4 text-2xl font-semibold leading-tight tracking-wide;
+  }
+
+  .answer-area {
+    @apply flex items-center justify-center gap-3 p-4 text-3xl font-semibold tracking-widest;
+  }
+
+  .puzzle-area {
+    @apply mb-3 px-4 py-2 text-lg font-medium;
+  }
+
+  .timer-area {
+    @apply px-4 py-2 text-lg font-medium;
+  }
+
+  .input-wrapper {
+    @apply px-4 py-2;
+  }
+
+  .input-area {
+    @apply w-full rounded-md border border-slate-300 px-4 py-4 text-lg outline-none focus:shadow-md;
+  }
+
+  .btn-container {
+    @apply mb-5 flex items-center justify-center gap-4 px-4 py-2 text-center;
+  }
+
+  .btn {
+    @apply flex-grow cursor-pointer rounded-md py-3 text-white;
+  }
+
+  .btn-refresh {
+    @apply bg-gray-500 hover:bg-gray-500/80;
+  }
+
+  .btn-check {
+    @apply bg-indigo-500 hover:bg-indigo-500/80;
+  }
+}
